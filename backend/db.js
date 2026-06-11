@@ -10,9 +10,9 @@ const pool = new Pool({
   port:     parseInt(process.env.DB_PORT) || 5432,
   database: process.env.DB_NAME     || 'student_result_db',
   user:     process.env.DB_USER     || 'postgres',
-  password: String(process.env.DB_PASSWORD || 'raushankumarsah07'),  // String() fixes numeric password bug
-  ssl: { rejectUnauthorized: false },
-  application_name: 'student_result_app',  
+  password: String(process.env.DB_PASSWORD || '0709'),  // String() fixes numeric password bug
+  // ssl: { rejectUnauthorized: false },
+  // application_name: 'student_result_app',  
 });
 
 // ── Auto-create tables + trigger on every server startup ─────────────────────
