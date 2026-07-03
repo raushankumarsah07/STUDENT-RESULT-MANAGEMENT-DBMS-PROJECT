@@ -1,0 +1,5 @@
+backend 
+npm run dev 
+
+fronted 
+npm start 
